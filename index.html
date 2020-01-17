@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>surpris</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<canvas id="canvas"></canvas>
+<!-- partial -->
+<script  src="./script.js"></script>
+<script>
+  setTimeout(() => {
+    let fireworks = new Fireworks({
+      canvas: document.getElementById("canvas"),
+      callback: function () {
+        console.log('礼花结束!')
+      }
+    })
+  }, 1000)
+</script>
+</body>
+</html>
